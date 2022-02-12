@@ -2,8 +2,8 @@
 <html>
 <body>
 <h1>SGP Project</h1>
-<h2>19DIT0013</h2>
-<h2>19DIT015</h2>
+<h3>19DIT003</h3>
+<h3>19DIT015</h3>
 <?php
 
   /* Connect to MySQL and select the database. */
