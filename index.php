@@ -1,7 +1,9 @@
 <?php include "../inc/dbinfo.inc"; ?>
 <html>
 <body>
-<h1>Sample page</h1>
+<h1>SGP Project</h1>
+<h2>19DIT0013</h2>
+<h2>19DIT015</h2>
 <?php
 
   /* Connect to MySQL and select the database. */
