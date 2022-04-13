@@ -6,7 +6,6 @@
 <h3>19DIT015</h3>
 <?php
 
-
   /* Connect to MySQL and select the database. */
   $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
 
