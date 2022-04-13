@@ -4,6 +4,7 @@
 <h1>SGP Project</h1>
 <h3>19DIT003</h3>
 <h3>19DIT015</h3>
+<p>update</p>
 <?php
 
   /* Connect to MySQL and select the database. */
