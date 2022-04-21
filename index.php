@@ -1,10 +1,11 @@
 <?php include "../inc/dbinfo.inc"; ?>
 <html>
 <body>
-<h1>SGP Project</h1>
-<h3>19DIT003</h3>
-<h3>19DIT015</h3>
-<p>update</p>
+<h1 style="font-size: 50px; text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">SGP Project</h1>
+<h3 style="font-size: 25px;">Nishita Ardeshna (19DIT003)</h3>
+<h3 style="font-size: 25px;">Rushi Donga (19DIT015)</h3>
+<p style="font-size: 25px; text-align: center; font-weight: bold;">Updated List</p>
+
 <?php
 
   /* Connect to MySQL and select the database. */
@@ -28,27 +29,32 @@
 
 <!-- Input form -->
 <form action="<?PHP echo $_SERVER['SCRIPT_NAME'] ?>" method="POST">
-  <table border="0">
+  <center>
+  <table border="0" style="border-spacing: 15px;">
     <tr>
       <td>NAME</td>
-      <td>ADDRESS</td>
+      <td>
+        <input type="text" name="NAME" maxlength="45" size="60" />
+      </td>
     </tr>
     <tr>
-      <td>
-        <input type="text" name="NAME" maxlength="45" size="30" />
-      </td>
+      <td>ADDRESS</td>
       <td>
         <input type="text" name="ADDRESS" maxlength="90" size="60" />
       </td>
+    </tr>
+    <tr>
       <td>
         <input type="submit" value="Add Data" />
       </td>
     </tr>
   </table>
+  </center>
 </form>
 
 <!-- Display table data. -->
-<table border="1" cellpadding="2" cellspacing="2">
+<center>
+<table border="7" cellpadding="5" cellspacing="5" style="border-spacing: 10px;">
   <tr>
     <td>ID</td>
     <td>NAME</td>
@@ -69,8 +75,10 @@ while($query_data = mysqli_fetch_row($result)) {
 ?>
 
 </table>
+</center>
 
 <!-- Clean up. -->
+
 <?php
 
   mysqli_free_result($result);
@@ -120,5 +128,4 @@ function TableExists($tableName, $connection, $dbName) {
 
   return false;
 }
-?>                        
-                
+?>  
